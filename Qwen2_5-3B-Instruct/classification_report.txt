@@ -1,0 +1,10 @@
+              precision    recall  f1-score   support
+
+   Menstrual     0.7308    0.7917    0.7600       216
+  Follicular     0.7716    0.8051    0.7880       277
+   Fertility     0.8589    0.8086    0.8330       256
+      Luteal     0.8750    0.8407    0.8575       383
+
+    accuracy                         0.8154      1132
+   macro avg     0.8091    0.8115    0.8096      1132
+weighted avg     0.8185    0.8154    0.8164      1132

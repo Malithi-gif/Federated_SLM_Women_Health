@@ -1,0 +1,82 @@
+[
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a women's health assistant. Given the reported features, predict the most likely menstrual cycle phase and provide brief supportive feedback. Choose exactly one phase from: Menstrual, Follicular, Fertility, Luteal. Output exactly in this format:\nPredicted Phase: <one phase>\nFeedback: <2 to 4 sentences>"
+      },
+      {
+        "role": "user",
+        "content": "Health features:\nstudy interval: 2024.000\nis weekend: false\nday in study: 886.000\nlh: 2.300\nestrogen: 164.400\npdg: 16.400\nflow volume: not_reported\nflow color: not_reported\nheadaches: not_reported\ncramps: not_reported\nsorebreasts: not_reported\nfatigue: not_reported\nsleepissue: not_reported\nmoodswing: not_reported\nfoodcravings: not_reported\nindigestion: not_reported\nbloating: not_reported\n\nPredict the phase and provide feedback."
+      },
+      {
+        "role": "assistant",
+        "content": "Predicted Phase: Luteal\nFeedback: The reported pattern is most consistent with the luteal phase. Breast tenderness may reflect later-cycle changes. Bloating-related symptoms are also present. Mood-related changes may be noticeable during this time. Gentle self-care, rest, and consistent symptom tracking may be useful."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a women's health assistant. Given the reported features, predict the most likely menstrual cycle phase and provide brief supportive feedback. Choose exactly one phase from: Menstrual, Follicular, Fertility, Luteal. Output exactly in this format:\nPredicted Phase: <one phase>\nFeedback: <2 to 4 sentences>"
+      },
+      {
+        "role": "user",
+        "content": "Health features:\nstudy interval: 2022.000\nis weekend: false\nday in study: 52.000\nlh: 1.000\nestrogen: 28.900\npdg: 2.100\nflow volume: somewhat light\nflow color: bright red\nheadaches: very low/little\ncramps: very low/little\nsorebreasts: low\nfatigue: moderate\nsleepissue: moderate\nmoodswing: moderate\nfoodcravings: moderate\nindigestion: very low/little\nbloating: moderate\n\nPredict the phase and provide feedback."
+      },
+      {
+        "role": "assistant",
+        "content": "Predicted Phase: Menstrual\nFeedback: The reported pattern is most consistent with the menstrual phase. Bleeding-related features appear active in this record. Prioritizing rest, hydration, and symptom tracking may be helpful. Sleep-related difficulty may be affecting overall comfort. Fatigue appears relevant in this record."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a women's health assistant. Given the reported features, predict the most likely menstrual cycle phase and provide brief supportive feedback. Choose exactly one phase from: Menstrual, Follicular, Fertility, Luteal. Output exactly in this format:\nPredicted Phase: <one phase>\nFeedback: <2 to 4 sentences>"
+      },
+      {
+        "role": "user",
+        "content": "Health features:\nstudy interval: 2022.000\nis weekend: false\nday in study: 80.000\nlh: 31.900\nestrogen: 179.800\npdg: 7.600\nflow volume: not at all\nflow color: not at all\nheadaches: not_reported\ncramps: not_reported\nsorebreasts: not_reported\nfatigue: not_reported\nsleepissue: not_reported\nmoodswing: not_reported\nfoodcravings: not_reported\nindigestion: not_reported\nbloating: not_reported\n\nPredict the phase and provide feedback."
+      },
+      {
+        "role": "assistant",
+        "content": "Predicted Phase: Luteal\nFeedback: The reported pattern is most consistent with the luteal phase. Breast tenderness may reflect later-cycle changes. Bloating-related symptoms are also present. Mood-related changes may be noticeable during this time. Gentle self-care, rest, and consistent symptom tracking may be useful."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a women's health assistant. Given the reported features, predict the most likely menstrual cycle phase and provide brief supportive feedback. Choose exactly one phase from: Menstrual, Follicular, Fertility, Luteal. Output exactly in this format:\nPredicted Phase: <one phase>\nFeedback: <2 to 4 sentences>"
+      },
+      {
+        "role": "user",
+        "content": "Health features:\nstudy interval: 2024.000\nis weekend: false\nday in study: 888.000\nlh: 14.100\nestrogen: 251.700\npdg: 4.900\nflow volume: not_reported\nflow color: not_reported\nheadaches: not_reported\ncramps: not_reported\nsorebreasts: not_reported\nfatigue: not_reported\nsleepissue: not_reported\nmoodswing: not_reported\nfoodcravings: not_reported\nindigestion: not_reported\nbloating: not_reported\n\nPredict the phase and provide feedback."
+      },
+      {
+        "role": "assistant",
+        "content": "Predicted Phase: Fertility\nFeedback: The reported pattern is most consistent with the fertility phase. Higher LH may align with a fertility-related window. Elevated estrogen may also support this pattern. Continued daily tracking can help capture short-term hormonal changes."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a women's health assistant. Given the reported features, predict the most likely menstrual cycle phase and provide brief supportive feedback. Choose exactly one phase from: Menstrual, Follicular, Fertility, Luteal. Output exactly in this format:\nPredicted Phase: <one phase>\nFeedback: <2 to 4 sentences>"
+      },
+      {
+        "role": "user",
+        "content": "Health features:\nstudy interval: 2024.000\nis weekend: true\nday in study: 917.000\nlh: 8.400\nestrogen: 86.700\npdg: 1.000\nflow volume: not_reported\nflow color: not_reported\nheadaches: not_reported\ncramps: not_reported\nsorebreasts: not_reported\nfatigue: not_reported\nsleepissue: not_reported\nmoodswing: not_reported\nfoodcravings: not_reported\nindigestion: not_reported\nbloating: not_reported\n\nPredict the phase and provide feedback."
+      },
+      {
+        "role": "assistant",
+        "content": "Predicted Phase: Follicular\nFeedback: The reported pattern is most consistent with the follicular phase. The hormone pattern suggests a transition after menstruation. Maintaining routine sleep and consistent self-tracking may help identify changes."
+      }
+    ]
+  }
+]

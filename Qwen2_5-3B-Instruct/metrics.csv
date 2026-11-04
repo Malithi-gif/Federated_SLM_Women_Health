@@ -1,0 +1,2 @@
+model,accuracy,macro_f1,weighted_f1
+Qwen/Qwen2.5-3B-Instruct,0.815371025,0.809626789,0.816352469
