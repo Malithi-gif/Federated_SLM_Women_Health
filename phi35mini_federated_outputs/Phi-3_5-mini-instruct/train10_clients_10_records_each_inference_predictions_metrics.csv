@@ -1,0 +1,2 @@
+num_rows,num_valid_eval_rows,num_invalid_or_unknown_predictions,accuracy,macro_f1,weighted_f1,total_inference_time_seconds,avg_time_per_row_seconds,avg_prediction_feedback_time_seconds,avg_prediction_time_seconds,avg_feedback_time_seconds,avg_memory_after_mb,max_memory_after_mb,avg_cpu_percent_after,avg_gpu_memory_after_mb,max_gpu_memory_after_mb
+100,100,0,0.35,0.2884550084889643,0.29164912280701755,796.4384306999855,7.964384306999855,7.924429114018567,1.7582524649705737,6.161747313975357,1459.834609375,1460.2734375,95.14800000000001,7392.271484375,7392.271484375

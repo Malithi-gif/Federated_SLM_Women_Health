@@ -1,0 +1,201 @@
+row_number,woman_id,study_interval,day_in_study,true_phase,pred_phase,feedback,full_response,prediction_feedback_time_seconds,cpu_percent_after,memory_after_mb
+1,26,2022,31,Menstrual,Luteal,The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Hydration,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Hydration",6.356320300139487,89.3,1458.515625
+2,26,2024,938,Luteal,Luteal,The reported pattern is most consistent with the luteal phase. Breast tenderness may be relevant. Hydration may help,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Breast tenderness may be relevant. Hydration may help",5.272246100008488,97.9,1458.87890625
+3,26,2022,85,Luteal,Luteal,It appears you may be experiencing typical luteal phase changes. Sore breasts may be contributing to discomfort. H,"Predicted Phase: Luteal
+Feedback: It appears you may be experiencing typical luteal phase changes. Sore breasts may be contributing to discomfort. H",5.448896700050682,97.7,1459.0078125
+4,26,2024,965,Luteal,Luteal,The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. St,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. St",5.218956899829209,100.0,1459.0234375
+5,26,2022,61,Menstrual,Menstrual,The reported pattern is consistent with the menstrual phase. Fatigue may be contributing to sleep issues. Sleep-related comfort,"Predicted Phase: Menstrual
+Feedback: The reported pattern is consistent with the menstrual phase. Fatigue may be contributing to sleep issues. Sleep-related comfort",5.332281699869782,96.8,1459.05078125
+6,26,2024,921,Menstrual,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",5.293303600046784,95.9,1459.15234375
+7,26,2022,46,Luteal,Luteal,It appears you may be experiencing typical luteal phase changes. Headache-related discomfort may be worth monitoring. Sleep,"Predicted Phase: Luteal
+Feedback: It appears you may be experiencing typical luteal phase changes. Headache-related discomfort may be worth monitoring. Sleep",5.154466100037098,98.5,1459.17578125
+8,26,2024,948,Menstrual,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",5.176223099697381,98.5,1459.1875
+9,26,2022,10,Follicular,Luteal,The reported pattern is most consistent with the luteal phase. Breast tenderness may be contributing to comfort. Hydr,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Breast tenderness may be contributing to comfort. Hydr",5.245258599985391,96.7,1459.203125
+10,26,2024,962,Luteal,Luteal,The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. S",5.407505400013179,98.8,1459.2421875
+11,42,2022,16,Follicular,Luteal,The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Sleep-related,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Sleep-related",5.888833200093359,97.6,1459.3046875
+12,42,2022,10,Follicular,Luteal,It appears you may be experiencing typical luteal phase changes. Fatigue may be contributing to sleep issues. Hydr,"Predicted Phase: Luteal
+Feedback: It appears you may be experiencing typical luteal phase changes. Fatigue may be contributing to sleep issues. Hydr",5.540181600023061,95.2,1459.33984375
+13,42,2024,874,Menstrual,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",5.624711799900979,96.9,1459.3515625
+14,42,2022,79,Luteal,Luteal,It appears you may be experiencing bloating common in the luteal phase. Fatigue may be contributing to sleep issues.,"Predicted Phase: Luteal
+Feedback: It appears you may be experiencing bloating common in the luteal phase. Fatigue may be contributing to sleep issues.",5.467690599616617,96.3,1459.37890625
+15,42,2022,67,Follicular,Luteal,The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Sleep-related,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Sleep-related",5.092593200039119,98.8,1459.39453125
+16,42,2022,46,Luteal,Luteal,The reported pattern is most consistent with the luteal phase. Fatigue and bloating may be contributing to discomfort.,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Fatigue and bloating may be contributing to discomfort.",6.710227699950337,89.3,1459.40234375
+17,42,2024,891,Luteal,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",6.11727590020746,90.3,1459.4453125
+18,42,2024,920,Luteal,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",7.624912499915808,94.5,1459.4453125
+19,42,2024,969,Fertility,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",7.893174299970269,94.1,1459.453125
+20,42,2024,940,Fertility,Luteal,The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. S",8.384378100279719,95.0,1459.45703125
+21,33,2024,904,Luteal,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",8.070237499661744,93.6,1459.546875
+22,33,2022,17,Follicular,Luteal,Your reported pattern is most consistent with the luteal phase. Mood-related changes may be contributing to your experience. Sleep,"Predicted Phase: Luteal
+Feedback: Your reported pattern is most consistent with the luteal phase. Mood-related changes may be contributing to your experience. Sleep",7.803549699950963,96.4,1459.55078125
+23,33,2024,921,Follicular,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",8.271472599823028,95.1,1459.55859375
+24,33,2024,862,Follicular,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",8.122722600121051,94.1,1459.5703125
+25,33,2022,69,Luteal,Luteal,The reported pattern is most consistent with the luteal phase. Breast tenderness may be relevant for comfort. Hydration,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Breast tenderness may be relevant for comfort. Hydration",8.011428700294346,95.1,1459.58984375
+26,33,2024,919,Follicular,Luteal,The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. St,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. St",8.062665099743754,94.2,1459.59765625
+27,33,2022,56,Follicular,Luteal,The reported pattern is most consistent with the luteal phase. Breast tenderness may be contributing to discomfort. H,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Breast tenderness may be contributing to discomfort. H",8.228479000274092,96.4,1459.6328125
+28,33,2022,16,Follicular,Luteal,It appears you may be in the luteal phase. Fatigue may be contributing to your sleep pattern. Mood-related,"Predicted Phase: Luteal
+Feedback: It appears you may be in the luteal phase. Fatigue may be contributing to your sleep pattern. Mood-related",7.900443700142205,95.1,1459.63671875
+29,33,2024,878,Fertility,Luteal,Your reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. St,"Predicted Phase: Luteal
+Feedback: Your reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. St",8.063519699964672,95.6,1459.72265625
+30,33,2024,877,Fertility,Luteal,The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. St,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. St",8.89223669981584,94.4,1459.72265625
+31,47,2022,46,Menstrual,Luteal,The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Hydration,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Hydration",8.579102800227702,95.6,1459.73046875
+32,47,2024,885,Menstrual,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",9.245968400035052,95.6,1459.73046875
+33,47,2022,77,Menstrual,Luteal,It appears you may be in the luteal phase. Headache symptoms may be contributing to discomfort. Hydr,"Predicted Phase: Luteal
+Feedback: It appears you may be in the luteal phase. Headache symptoms may be contributing to discomfort. Hydr",8.788064499851316,95.4,1459.734375
+34,47,2024,892,Follicular,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",9.5499340002425,93.3,1459.73828125
+35,47,2024,861,Follicular,Luteal,The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. St,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. St",8.853703700006008,94.7,1459.75390625
+36,47,2024,900,Fertility,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",8.245632099919021,96.6,1459.75390625
+37,47,2022,16,Follicular,Menstrual,The reported pattern is consistent with the menstrual phase. Sleep-related difficulty may affect comfort. Hydration may help with,"Predicted Phase: Menstrual
+Feedback: The reported pattern is consistent with the menstrual phase. Sleep-related difficulty may affect comfort. Hydration may help with",8.312971899751574,94.2,1459.75390625
+38,47,2022,19,Follicular,Luteal,The pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Sleep-related comfort,"Predicted Phase: Luteal
+Feedback: The pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Sleep-related comfort",8.554582099895924,94.0,1459.7578125
+39,47,2022,17,Follicular,Luteal,Your reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Sleep-related,"Predicted Phase: Luteal
+Feedback: Your reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Sleep-related",8.864912900142372,94.2,1459.7578125
+40,47,2022,10,Follicular,Menstrual,The reported pattern is consistent with the menstrual phase. Hormone-related changes may be contributing to the pattern. Stay,"Predicted Phase: Menstrual
+Feedback: The reported pattern is consistent with the menstrual phase. Hormone-related changes may be contributing to the pattern. Stay",8.844350500032306,95.8,1459.7421875
+41,50,2022,46,Fertility,Luteal,The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Hydration,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Hydration",8.51320629986003,94.5,1459.74609375
+42,50,2024,896,Fertility,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",8.291984099894762,94.7,1459.77734375
+43,50,2022,77,Fertility,Luteal,It appears you may be experiencing typical luteal phase changes. Headache-related discomfort may affect your comfort. Hyd,"Predicted Phase: Luteal
+Feedback: It appears you may be experiencing typical luteal phase changes. Headache-related discomfort may affect your comfort. Hyd",8.392530899960548,93.5,1459.78125
+44,50,2024,903,Fertility,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",9.181693899910895,92.5,1459.78125
+45,50,2024,872,Fertility,Luteal,The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. St,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. St",8.478787600062788,94.9,1459.80078125
+46,50,2024,911,Luteal,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",8.374709800351411,96.3,1459.80078125
+47,50,2022,16,Follicular,Luteal,It appears you may be experiencing typical luteal phase changes. Fatigue may be contributing to sleep issues. Consider relaxation,"Predicted Phase: Luteal
+Feedback: It appears you may be experiencing typical luteal phase changes. Fatigue may be contributing to sleep issues. Consider relaxation",8.406708099879324,95.2,1459.8046875
+48,50,2022,19,Fertility,Luteal,It appears you may be experiencing typical luteal phase changes. Fatigue and bloating may be contributing to discomfort,"Predicted Phase: Luteal
+Feedback: It appears you may be experiencing typical luteal phase changes. Fatigue and bloating may be contributing to discomfort",8.759949599858373,91.6,1459.87890625
+49,50,2022,17,Follicular,Luteal,The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Hydration,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Hydration",8.538218200206757,94.5,1459.87890625
+50,50,2022,10,Menstrual,Menstrual,The reported pattern is consistent with the menstrual phase. Fatigue may be contributing to sleep issues. Hydration may,"Predicted Phase: Menstrual
+Feedback: The reported pattern is consistent with the menstrual phase. Fatigue may be contributing to sleep issues. Hydration may",8.207808199804276,95.2,1459.8828125
+51,12,2022,46,Fertility,Luteal,The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. S",8.3281346000731,94.8,1459.90234375
+52,12,2024,944,Follicular,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",8.210089600179344,93.5,1459.90234375
+53,12,2022,77,Fertility,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",8.368112400174141,95.4,1459.90234375
+54,12,2024,951,Fertility,Luteal,The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. St,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. St",8.31919559976086,94.2,1459.9140625
+55,12,2024,921,Luteal,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",8.748593100346625,94.8,1459.9140625
+56,12,2024,985,Luteal,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",8.240174800157547,94.9,1459.9140625
+57,12,2022,16,Fertility,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",8.176831500139087,94.8,1459.9140625
+58,12,2022,19,Fertility,Luteal,The reported pattern is most consistent with the luteal phase. Bloating may be contributing to discomfort. Hydration,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Bloating may be contributing to discomfort. Hydration",8.225211199838668,94.9,1459.9140625
+59,12,2022,17,Fertility,Luteal,The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to your current experience. Sleep should,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to your current experience. Sleep should",8.23535680025816,96.0,1459.9140625
+60,12,2022,10,Follicular,Luteal,The reported pattern is most consistent with the luteal phase. Breast tenderness may be contributing to discomfort. S,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Breast tenderness may be contributing to discomfort. S",9.067777200136334,91.6,1459.921875
+61,38,2022,46,Menstrual,Luteal,It appears you may be experiencing typical luteal phase changes. Sore breasts may contribute to discomfort. Hydr,"Predicted Phase: Luteal
+Feedback: It appears you may be experiencing typical luteal phase changes. Sore breasts may contribute to discomfort. Hydr",8.928964899852872,92.7,1459.92578125
+62,38,2024,902,Follicular,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",9.082569900434464,93.1,1460.171875
+63,38,2022,77,Luteal,Luteal,The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to discomfort. Sleep should,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to discomfort. Sleep should",8.22157369973138,96.8,1460.171875
+64,38,2024,909,Follicular,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",8.418919799849391,95.0,1460.1796875
+65,38,2024,879,Fertility,Luteal,The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. S",8.409158500377089,95.9,1460.1796875
+66,38,2024,943,Fertility,Luteal,The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. S",8.368420199956745,95.7,1460.1796875
+67,38,2022,16,Menstrual,Luteal,The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Headache relief may,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Headache relief may",8.682718199677765,94.6,1460.18359375
+68,38,2022,19,Follicular,Luteal,The reported pattern is most consistent with the luteal phase. Headache symptoms may be contributing to discomfort. Hyd,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Headache symptoms may be contributing to discomfort. Hyd",8.249598400201648,94.9,1460.18359375
+69,38,2022,17,Menstrual,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",8.768928300123662,93.8,1460.18359375
+70,38,2022,10,Luteal,Luteal,The reported pattern is most consistent with the luteal phase. Breast tenderness may be relevant. Sleep-related comfort appears,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Breast tenderness may be relevant. Sleep-related comfort appears",8.334491499699652,93.8,1460.18359375
+71,27,2022,46,Luteal,Luteal,The reported pattern is most consistent with the luteal phase. Headache symptoms may be contributing to discomfort. Hyd,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Headache symptoms may be contributing to discomfort. Hyd",8.318541600368917,94.0,1460.18359375
+72,27,2024,916,Luteal,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",8.161134200170636,95.4,1460.1875
+73,27,2022,77,Menstrual,Menstrual,"It appears you may be experiencing typical menstrual-related discomfort. Headache relief strategies may help, along with stay","Predicted Phase: Menstrual
+Feedback: It appears you may be experiencing typical menstrual-related discomfort. Headache relief strategies may help, along with stay",8.378845599945635,96.3,1460.1875
+74,27,2024,923,Menstrual,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",8.323881499934942,95.5,1460.1875
+75,27,2024,893,Luteal,Luteal,The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. St,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. St",8.703476400114596,92.5,1460.1875
+76,27,2024,957,Luteal,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",8.91797890001908,93.5,1460.19140625
+77,27,2022,16,Luteal,Luteal,The reported pattern is most consistent with the luteal phase. Breast tenderness may be contributing to discomfort. H,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Breast tenderness may be contributing to discomfort. H",8.977644000202417,92.2,1460.19140625
+78,27,2022,19,Luteal,Luteal,The reported pattern is most consistent with the luteal phase. Breast tenderness may be contributing to discomfort. S,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Breast tenderness may be contributing to discomfort. S",8.385310600046068,95.2,1460.1953125
+79,27,2022,17,Luteal,Luteal,The reported pattern is most consistent with the luteal phase. Headache symptoms may be contributing to discomfort. Hyd,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Headache symptoms may be contributing to discomfort. Hyd",8.924746799748391,95.1,1460.19921875
+80,27,2022,10,Luteal,Luteal,The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Hydration,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Hydration",8.523381299804896,94.1,1460.19921875
+81,20,2024,953,Menstrual,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",8.30163270002231,96.8,1460.19921875
+82,20,2022,76,Luteal,Luteal,The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Headache relief may,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Headache relief may",8.393345600459725,95.0,1460.20703125
+83,20,2024,959,Follicular,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",8.719147700350732,94.5,1460.20703125
+84,20,2022,67,Fertility,Luteal,Your reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Headache relief may,"Predicted Phase: Luteal
+Feedback: Your reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Headache relief may",8.415496799629182,95.7,1460.20703125
+85,20,2022,61,Menstrual,Menstrual,The reported pattern is consistent with the menstrual phase. Cramps may be contributing to discomfort. Hydration,"Predicted Phase: Menstrual
+Feedback: The reported pattern is consistent with the menstrual phase. Cramps may be contributing to discomfort. Hydration",8.235236799810082,95.6,1460.21484375
+86,20,2022,16,Fertility,Luteal,The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Headache relief may,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Headache relief may",8.346026299986988,94.8,1460.22265625
+87,20,2022,10,Follicular,Luteal,The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to your sleep. Sorebreast,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to your sleep. Sorebreast",8.916348300408572,94.4,1460.22265625
+88,20,2022,17,Fertility,Luteal,The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Headache management may,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to sleep issues. Headache management may",8.828230100218207,95.8,1460.234375
+89,20,2024,929,Follicular,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",8.07118279999122,97.3,1460.234375
+90,20,2024,926,Menstrual,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",8.535591199994087,94.3,1460.234375
+91,41,2024,904,Fertility,Luteal,The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. S",8.174864799715579,96.2,1460.234375
+92,41,2022,76,Menstrual,Menstrual,The reported pattern is consistent with the menstrual phase. Cramps may be contributing to discomfort. Hydration,"Predicted Phase: Menstrual
+Feedback: The reported pattern is consistent with the menstrual phase. Cramps may be contributing to discomfort. Hydration",8.16708130016923,97.1,1460.25
+93,41,2024,910,Luteal,Follicular,The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S,"Predicted Phase: Follicular
+Feedback: The reported pattern is most consistent with the follicular phase. Hormone-related changes may be contributing to the pattern. S",7.899435800034553,96.1,1460.25
+94,41,2022,67,Luteal,Luteal,The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to discomfort. Hydr,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to discomfort. Hydr",7.98655050015077,97.5,1460.25
+95,41,2022,61,Fertility,Luteal,Your reported pattern is most consistent with the luteal phase. Sleep-related difficulty may affect comfort.,"Predicted Phase: Luteal
+Feedback: Your reported pattern is most consistent with the luteal phase. Sleep-related difficulty may affect comfort.",7.078556099906564,94.5,1460.26171875
+96,41,2022,16,Luteal,Luteal,It appears you may be experiencing typical luteal phase changes. Sore breasts may be contributing to discomfort. H,"Predicted Phase: Luteal
+Feedback: It appears you may be experiencing typical luteal phase changes. Sore breasts may be contributing to discomfort. H",8.044091300107539,96.3,1460.26171875
+97,41,2022,10,Luteal,Luteal,Your reported pattern is most consistent with the luteal phase. Mood-related changes may be contributing to your experience. Hyd,"Predicted Phase: Luteal
+Feedback: Your reported pattern is most consistent with the luteal phase. Mood-related changes may be contributing to your experience. Hyd",8.129569600336254,97.1,1460.26171875
+98,41,2022,17,Luteal,Luteal,The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to discomfort. Headache management,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Fatigue may be contributing to discomfort. Headache management",8.434724099934101,95.6,1460.26953125
+99,41,2024,880,Luteal,Luteal,The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. St,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. St",8.008847800083458,97.1,1460.2734375
+100,41,2024,877,Fertility,Luteal,The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. St,"Predicted Phase: Luteal
+Feedback: The reported pattern is most consistent with the luteal phase. Hormone-related changes may be contributing to the pattern. St",8.096178399864584,97.7,1460.2734375

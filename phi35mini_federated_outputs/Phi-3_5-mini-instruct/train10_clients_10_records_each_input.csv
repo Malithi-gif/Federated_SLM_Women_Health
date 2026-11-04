@@ -1,0 +1,101 @@
+id,study_interval,is_weekend,day_in_study,phase,lh,estrogen,pdg,flow_volume,flow_color,headaches,cramps,sorebreasts,fatigue,sleepissue,moodswing,foodcravings,indigestion,bloating
+26,2022,False,31,Menstrual,3.3,74.7,2.1,not_reported,not_reported,Moderate,Very Low/Little,Not at all,High,High,Very Low/Little,High,Low,Very Low/Little
+26,2024,True,938,Luteal,11.8,203.5,12.8,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+26,2022,True,85,Luteal,5.3,146.5,7.6,not_reported,not_reported,High,Not at all,Very High,High,High,Very Low/Little,High,Low,Low
+26,2024,False,965,Luteal,5.6,249.9,28.5,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+26,2022,False,61,Menstrual,4.7,83.1,2.1,Somewhat Heavy,Dark Brown / Dark Red,Very Low/Little,Not at all,Very Low/Little,Very High,High,Very Low/Little,Low,Very Low/Little,Low
+26,2024,False,921,Menstrual,1.0,82.4,1.0,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+26,2022,False,46,Luteal,5.0,206.4,7.6,Not at all,Not at all,Moderate,Not at all,Not at all,Low,High,Very High,Low,Moderate,Not at all
+26,2024,False,948,Menstrual,4.9,119.1,2.3,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+26,2022,False,10,Follicular,2.3,67.8,2.0,Light,Other,Not at all,Very Low/Little,Not at all,Low,Low,Not at all,Moderate,Low,Not at all
+26,2024,False,962,Luteal,4.1,148.7,18.1,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+42,2022,False,16,Follicular,9.9,293.3,2.0,Not at all,Not at all,Very Low/Little,Not at all,Not at all,Moderate,Very Low/Little,Moderate,Moderate,Low,Low
+42,2022,False,10,Follicular,5.0,58.0,2.0,Not at all,Not at all,Low,Not at all,Not at all,Moderate,Very Low/Little,Low,High,Very High,Moderate
+42,2024,False,874,Menstrual,5.2,63.4,1.0,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+42,2022,False,79,Luteal,1.9,59.5,7.6,Not at all,Not at all,Not at all,Not at all,Not at all,High,Moderate,Low,Moderate,Very High,Moderate
+42,2022,False,67,Follicular,3.7,42.3,2.0,Not at all,Not at all,Very Low/Little,Low,Not at all,Moderate,Very High,Very High,Moderate,Very Low/Little,Very Low/Little
+42,2022,False,46,Luteal,3.6,146.5,7.6,Not at all,Not at all,Low,Not at all,Not at all,High,High,High,High,High,High
+42,2024,False,891,Luteal,4.5,140.2,8.2,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+42,2024,False,920,Luteal,3.2,125.3,5.7,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+42,2024,False,969,Fertility,6.25,133.6,3.0,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+42,2024,False,940,Fertility,50.1,424.2,3.7,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+33,2024,True,904,Luteal,7.3,98.5,10.6,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+33,2022,False,17,Follicular,4.0,128.0,2.0,Not at all,Not at all,Very Low/Little,Very Low/Little,Very Low/Little,Very Low/Little,Very Low/Little,Very High,Very Low/Little,Very Low/Little,Very Low/Little
+33,2024,False,921,Follicular,5.0,45.3,1.0,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+33,2024,True,862,Follicular,18.6,108.1,5.7,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+33,2022,False,69,Luteal,4.0,74.0,7.6,Not at all,Not at all,Very Low/Little,Very Low/Little,Very High,Very Low/Little,Very Low/Little,Very Low/Little,Low,Low,Low
+33,2024,False,919,Follicular,12.8,93.4,6.4,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+33,2022,True,56,Follicular,3.0,56.0,2.0,Not at all,Not at all,Low,Very Low/Little,Very Low/Little,Very Low/Little,Very Low/Little,Very Low/Little,Low,Very Low/Little,Very Low/Little
+33,2022,False,16,Follicular,4.7,101.0,2.0,Not at all,Not at all,Very Low/Little,Very Low/Little,Very Low/Little,Moderate,Very Low/Little,Moderate,Low,Very Low/Little,Very Low/Little
+33,2024,False,878,Fertility,4.2,54.0,1.5,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+33,2024,False,877,Fertility,17.0,100.2,3.4,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+47,2022,True,46,Menstrual,5.0,47.5,2.1,not_reported,not_reported,Low,Very Low/Little,Very Low/Little,High,Low,Very Low/Little,Very Low/Little,High,Very High
+47,2024,True,885,Menstrual,4.2,100.0,6.1,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+47,2022,False,77,Menstrual,4.2,75.0,2.1,not_reported,not_reported,Moderate,Very Low/Little,Very Low/Little,Very Low/Little,Very Low/Little,Moderate,Low,Low,Moderate
+47,2024,True,892,Follicular,4.0,78.0,1.7,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+47,2024,False,861,Follicular,5.9,78.8,2.3,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+47,2024,True,900,Fertility,5.8,132.1,2.3,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+47,2022,False,16,Follicular,4.3,156.7,2.0,Spotting / Very Light,Other,Low,Very Low/Little,Very Low/Little,Moderate,Low,Low,Low,Very Low/Little,Low
+47,2022,False,19,Follicular,2.9,77.9,2.0,Somewhat Light,Other,Very Low/Little,Very Low/Little,Very Low/Little,Very High,Moderate,Moderate,Moderate,Low,Very Low/Little
+47,2022,True,17,Follicular,3.0,27.0,2.0,not_reported,not_reported,Low,Very Low/Little,Very Low/Little,Moderate,Low,Low,Low,Very Low/Little,Low
+47,2022,True,10,Follicular,5.0,146.1,2.0,Light,Orange,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+50,2022,False,46,Fertility,2.6,26.0,3.0,Not at all,Not at all,Not at all,Not at all,Not at all,High,Moderate,High,Moderate,High,High
+50,2024,True,896,Fertility,2.9,53.0,1.0,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+50,2022,True,77,Fertility,6.9,98.9,3.0,Not at all,Not at all,Moderate,Not at all,Not at all,Low,Moderate,Moderate,High,Low,High
+50,2024,True,903,Fertility,3.9,44.0,2.3,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+50,2024,False,872,Fertility,8.0,52.3,2.7,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+50,2024,True,911,Luteal,4.0,76.9,4.2,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+50,2022,False,16,Follicular,2.8,53.1,2.0,Not at all,Not at all,Low,Not at all,Not at all,Very High,Moderate,Moderate,Low,Moderate,Moderate
+50,2022,False,19,Fertility,2.9,79.1,3.0,Not at all,Not at all,High,Not at all,Not at all,Moderate,Moderate,Moderate,Low,Moderate,High
+50,2022,False,17,Follicular,4.5,133.7,2.0,Not at all,Not at all,High,Not at all,Not at all,Very High,High,Low,Very High,Very High,Very High
+50,2022,False,10,Menstrual,3.2,28.0,2.1,Light,Dark Brown / Dark Red,Not at all,Not at all,Not at all,Very High,High,Moderate,High,Moderate,High
+12,2022,False,46,Fertility,2.7,69.9,3.0,not_reported,not_reported,Very Low/Little,Very Low/Little,Very Low/Little,Very Low/Little,Very Low/Little,Very Low/Little,Very Low/Little,Very Low/Little,Very Low/Little
+12,2024,False,944,Follicular,5.9,44.3,1.1,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+12,2022,True,77,Fertility,3.1,39.6,3.0,Not at all,Not at all,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+12,2024,False,951,Fertility,8.6,46.0,2.7,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+12,2024,False,921,Luteal,6.3,65.8,9.8,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+12,2024,False,985,Luteal,5.9,65.9,7.6,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+12,2022,False,16,Fertility,2.8,69.3,3.0,Not at all,Not at all,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+12,2022,False,19,Fertility,18.2,129.3,3.0,not_reported,not_reported,Very Low/Little,Very Low/Little,Very Low/Little,Very Low/Little,Very Low/Little,Very Low/Little,Very Low/Little,Very Low/Little,Low
+12,2022,False,17,Fertility,3.4,96.5,3.0,not_reported,not_reported,Very Low/Little,Very Low/Little,Low,Moderate,Very Low/Little,Very Low/Little,Very Low/Little,Very Low/Little,Very Low/Little
+12,2022,False,10,Follicular,2.9,26.2,2.0,Not at all,Not at all,Very Low/Little,Very Low/Little,Very Low/Little,Low,Very Low/Little,Very Low/Little,Very Low/Little,Very Low/Little,Very Low/Little
+38,2022,True,46,Menstrual,6.3,88.5,2.1,Not at all,Not at all,Very Low/Little,Not at all,Moderate,Moderate,Very Low/Little,Very Low/Little,Moderate,Low,Very Low/Little
+38,2024,False,902,Follicular,4.65,83.1,2.0,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+38,2022,False,77,Luteal,1.3,71.7,7.6,Not at all,Not at all,Very Low/Little,Low,Very Low/Little,Moderate,Not at all,High,Moderate,Moderate,Moderate
+38,2024,False,909,Follicular,4.65,83.1,2.0,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+38,2024,True,879,Fertility,6.25,133.6,3.0,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+38,2024,True,943,Fertility,61.9,307.3,4.9,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+38,2022,False,16,Menstrual,4.2,68.4,2.1,Not at all,Not at all,High,Not at all,Not at all,Very High,Moderate,Not at all,Not at all,Moderate,High
+38,2022,True,19,Follicular,8.0,297.9,2.0,not_reported,not_reported,High,Not at all,Not at all,High,Not at all,Very Low/Little,Not at all,Not at all,Low
+38,2022,False,17,Menstrual,5.2,61.4,2.1,Not at all,Not at all,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+38,2022,False,10,Luteal,6.5,105.0,7.6,Not at all,Not at all,Not at all,Not at all,Not at all,Low,Very Low/Little,Very Low/Little,Very Low/Little,Very Low/Little,Not at all
+27,2022,False,46,Luteal,2.4,75.7,7.6,Not at all,Not at all,Moderate,Moderate,Moderate,Moderate,Moderate,Moderate,Moderate,Moderate,Moderate
+27,2024,False,916,Luteal,7.5,125.8,17.0,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+27,2022,True,77,Menstrual,2.0,42.5,2.1,Not at all,Not at all,Moderate,High,Moderate,Moderate,Moderate,Moderate,Moderate,Moderate,Moderate
+27,2024,False,923,Menstrual,7.0,81.8,2.1,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+27,2024,False,893,Luteal,3.0,50.4,2.4,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+27,2024,False,957,Luteal,4.3,77.7,1.0,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+27,2022,False,16,Luteal,1.5,61.0,7.6,Not at all,Not at all,Moderate,Moderate,Moderate,High,High,Moderate,Moderate,High,High
+27,2022,False,19,Luteal,1.9,78.1,7.6,Not at all,Not at all,Moderate,Moderate,Moderate,High,High,High,Moderate,High,High
+27,2022,False,17,Luteal,3.4,127.3,7.6,Not at all,Not at all,Moderate,Moderate,Moderate,Moderate,Moderate,Moderate,Moderate,High,High
+27,2022,False,10,Luteal,5.2,225.6,7.6,Not at all,Not at all,Low,Low,Low,High,Moderate,Moderate,Low,Moderate,Moderate
+20,2024,True,953,Menstrual,5.9,86.3,2.8,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+20,2022,False,76,Luteal,4.7,64.9,7.6,Not at all,Not at all,Moderate,Not at all,Not at all,High,Low,Low,Not at all,Not at all,Not at all
+20,2024,True,959,Follicular,5.6,102.7,3.0,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+20,2022,False,67,Fertility,2.3,37.4,3.0,Not at all,Not at all,Moderate,Not at all,Not at all,Moderate,Low,Low,Not at all,Not at all,Not at all
+20,2022,False,61,Menstrual,3.8,87.1,2.1,Moderate,Bright Red,Moderate,Not at all,Not at all,Moderate,Low,Not at all,Not at all,Not at all,Not at all
+20,2022,False,16,Fertility,20.1,305.7,3.0,Not at all,Not at all,Moderate,Low,Low,High,Moderate,Moderate,Moderate,Very Low/Little,Very Low/Little
+20,2022,False,10,Follicular,3.3,54.6,2.0,Not at all,Not at all,Low,Very Low/Little,Low,Moderate,Very Low/Little,Very Low/Little,Low,Very Low/Little,Very Low/Little
+20,2022,False,17,Fertility,6.5,125.9,3.0,Not at all,Not at all,High,Very Low/Little,Very Low/Little,High,Moderate,Very Low/Little,Very Low/Little,Very Low/Little,Very Low/Little
+20,2024,False,929,Follicular,4.3,64.1,1.0,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+20,2024,False,926,Menstrual,4.8,80.4,1.6,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+41,2024,True,904,Fertility,10.0,147.6,17.6,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+41,2022,False,76,Menstrual,2.8,63.2,2.1,Moderate,Bright Red,Not at all,High,Very Low/Little,Not at all,Not at all,Moderate,Not at all,Moderate,Moderate
+41,2024,True,910,Luteal,2.3,49.7,3.3,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+41,2022,False,67,Luteal,2.5,91.1,7.6,Not at all,Not at all,Not at all,Not at all,Not at all,Very High,Very High,Not at all,Not at all,Moderate,Not at all
+41,2022,False,61,Fertility,18.2,407.4,3.0,Moderate,Other,Not at all,Not at all,Not at all,Not at all,Moderate,Not at all,Not at all,Not at all,Not at all
+41,2022,False,16,Luteal,5.6,155.4,7.6,Not at all,Not at all,Very High,Not at all,Moderate,Moderate,Not at all,Moderate,High,High,High
+41,2022,False,10,Luteal,5.2,142.9,7.6,Not at all,Not at all,Not at all,Not at all,Not at all,Not at all,Not at all,Moderate,Not at all,High,Not at all
+41,2022,False,17,Luteal,1.9,215.4,7.6,Not at all,Not at all,Very High,Not at all,Very High,Very High,Not at all,Not at all,Moderate,Very High,Very High
+41,2024,False,880,Luteal,8.1,55.0,6.9,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
+41,2024,False,877,Fertility,10.4,86.8,4.4,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported,not_reported
