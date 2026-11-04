@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Federated Small Language Models for Personalized and Interpretable Women's Health Support</title>
+  <meta name="description" content="A federated small language model framework that fine-tunes Qwen2.5-3B and Phi-3-mini with LoRA to predict menstrual phases and generate personalized natural-language feedback without centralizing raw health records.">
+
+  <!-- Social preview (update og:url after you deploy) -->
+  <meta property="og:title" content="Federated Small Language Models for Personalized and Interpretable Women's Health Support">
+  <meta property="og:description" content="Federated LoRA fine-tuning of Qwen2.5-3B and Phi-3-mini for menstrual phase prediction and personalized feedback, with raw records kept local.">
+  <meta property="og:image" content="assets/img/fig2-federated.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='13' fill='none' stroke='%237a2e5c' stroke-width='4' stroke-dasharray='18 3'/></svg>">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="Back to top">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+      <circle cx="16" cy="16" r="12" class="ring r1"/>
+      <circle cx="16" cy="16" r="12" class="ring r2"/>
+      <circle cx="16" cy="16" r="12" class="ring r3"/>
+      <circle cx="16" cy="16" r="12" class="ring r4"/>
+    </svg>
+    <span>FedSLM&nbsp;·&nbsp;Women's Health</span>
+  </a>
+  <nav class="nav" aria-label="Sections">
+    <a href="#overview">Overview</a>
+    <a href="#method">Method</a>
+    <a href="#dataset">Dataset</a>
+    <a href="#results">Results</a>
+    <a href="#examples">Examples</a>
+    <a href="#deployment">Deployment</a>
+    <a href="#citation">Cite</a>
+  </nav>
+  <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Preprint · Under review</p>
+      <h1>Federated small language models for <em>personalized</em> and <em>interpretable</em> women's health support</h1>
+
+      <!-- TODO: replace with real author names, affiliations and links once the paper is de-anonymized -->
+      <p class="authors">Anonymous Authors</p>
+      <p class="affil">Affiliations withheld for review</p>
+
+      <div class="links">
+        <a class="btn btn-primary" href="paper.pdf">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M9 13h6M9 17h6"/></svg>
+          Paper (PDF)
+        </a>
+        <span class="btn btn-disabled" title="Code will be released upon acceptance">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+          Code · coming soon
+        </span>
+        <a class="btn" href="https://doi.org/10.13026/zx6a-2c81" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>
+          mcPHASES Dataset
+        </a>
+        <a class="btn" href="#citation">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h4v4H7zM7 11c0 3-1 5-3 6M15 7h4v4h-4zM15 11c0 3-1 5-3 6"/></svg>
+          BibTeX
+        </a>
+      </div>
+
+      <dl class="hero-stats">
+        <div><dt>Accuracy</dt><dd>0.839</dd><span>Qwen2.5-3B, federated</span></div>
+        <div><dt>Macro F1</dt><dd>0.818</dd><span>4 menstrual phases</span></div>
+        <div><dt>Phase prediction</dt><dd>1–2<small>s</small></dd><span>per record, on a workstation</span></div>
+        <div><dt>Raw records shared</dt><dd>0</dd><span>only LoRA adapters are exchanged</span></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ TL;DR ============ -->
+  <section class="section tldr" id="overview">
+    <div class="wrap narrow">
+      <p class="lede">
+        Wearables and tracking apps collect rich hormonal, physiological and self-reported menstrual-health data, but turning it into <strong>understandable, personal insight</strong> without centralizing sensitive records is still hard. We fine-tune two small language models with <strong>federated LoRA</strong>, so each participant's raw records stay local, and the model returns both a <strong>phase prediction</strong> and short, <strong>feature-grounded feedback</strong>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ ABSTRACT ============ -->
+  <section class="section">
+    <div class="wrap narrow">
+      <h2 class="h-section"><span class="num">01</span>Abstract</h2>
+      <p>
+        The digitalization of women's health is expanding the collection of hormonal and physiological measurements and self-reported observations through mobile applications, wearable devices, and connected health platforms. However, translating these heterogeneous data into personalized, understandable insights while protecting sensitive records remains a challenge. This paper proposes a federated small language model (SLM) framework for menstrual phase prediction and natural-language feedback generation without centralizing raw health records.
+      </p>
+      <p>
+        We experiment with <strong>Qwen2.5-3B-Instruct</strong> and <strong>Phi-3-mini-Instruct</strong>, two SLMs whose quantized versions have been shown to run on smartphones in prior work. Using the mcPHASES dataset, we convert hormonal, physiological, and self-reported features into structured feature-to-text representations for fine-tuning with low-rank adaptation (LoRA). Each participant is treated as a client, with locally trained LoRA adapters combined through federated averaging while raw records remain local. The framework predicts the menstrual, follicular, fertility, and luteal phases and generates concise feedback based on the supplied features.
+      </p>
+      <p>
+        The federated Qwen2.5-3B and Phi-3-mini models achieve accuracies of <strong>0.839</strong> and <strong>0.825</strong> and macro F1-scores of <strong>0.818</strong> and <strong>0.803</strong>, respectively. Qualitative examples illustrate the generated feedback. On a workstation, phase prediction takes approximately 1–2 s and feedback generation 5–8.5 s. These findings support the potential of federated SLMs for decentralized interpretation of menstrual health measurements and personalized feedback in digital health applications.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ MOTIVATION ============ -->
+  <section class="section alt">
+    <div class="wrap">
+      <h2 class="h-section"><span class="num">02</span>The gap in today's apps</h2>
+      <div class="split">
+        <div>
+          <p>Wearables and smartphone platforms already collect complementary evidence of menstrual-health changes. Current apps do three things well: calendar-style logging, cycle-phase estimation, and future-period prediction.</p>
+          <p>Two things are missing:</p>
+          <ul class="gap-list">
+            <li><span class="gap-icon" aria-hidden="true">?</span><div><strong>Little explanation.</strong> Users get a label, not an account of how their symptoms, hormones and behaviour relate to the predicted phase.</div></li>
+            <li><span class="gap-icon" aria-hidden="true">!</span><div><strong>Centralized sensitive data.</strong> Cloud processing can mean sending reproductive-health records to central servers, raising privacy, trust and governance concerns.</div></li>
+          </ul>
+        </div>
+        <figure class="fig">
+          <img src="assets/img/fig1-motivation.png" alt="Diagram: menstrual data from consumer electronics flows into apps that provide logging, estimation and prediction; their limitations are inaccurate predictions and privacy risks related to data sharing and storage." loading="lazy">
+          <figcaption><b>Figure 1.</b> Existing menstrual health applications on mobile devices do not jointly address personalized feedback generation and privacy preservation.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTRIBUTIONS ============ -->
+  <section class="section">
+    <div class="wrap">
+      <h2 class="h-section"><span class="num">03</span>Contributions</h2>
+      <ol class="contrib">
+        <li>
+          <h3>Federated SLM framework</h3>
+          <p>Interprets menstrual-health measurements and self-reported observations, treating each participant as a client and keeping raw records local during training.</p>
+        </li>
+        <li>
+          <h3>Feature-to-text prompts</h3>
+          <p>Hormonal, physiological and self-reported features become structured prompts for phase prediction and personalized natural-language feedback.</p>
+        </li>
+        <li>
+          <h3>Federated LoRA fine-tuning</h3>
+          <p>Qwen2.5-3B-Instruct and Phi-3-mini-Instruct adapt collaboratively by exchanging lightweight adapter parameters, not full model weights or raw records.</p>
+        </li>
+        <li>
+          <h3>Evaluation &amp; deployment pathway</h3>
+          <p>Predictive performance, per-user behaviour, workstation resource usage and qualitative feedback analysis, plus a pathway to smartphone deployment informed by prior on-device work.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ METHOD ============ -->
+  <section class="section alt" id="method">
+    <div class="wrap">
+      <h2 class="h-section"><span class="num">04</span>Method</h2>
+
+      <figure class="fig fig-wide">
+        <img src="assets/img/fig2-federated.png" alt="Federated LoRA architecture: a central server holds the global SLM plus LoRA adapter, distributes it to M clients (one per participant), each with a frozen pretrained SLM, a trainable LoRA adapter and local menstrual health data; clients upload updated adapters for FedAvg aggregation." loading="lazy">
+        <figcaption><b>Figure 2.</b> Federated LoRA-based fine-tuning of small language models. Only adapter weights travel between clients and the server.</figcaption>
+      </figure>
+
+      <div class="steps-wrap">
+        <h3 class="h-sub">Nine steps, end to end</h3>
+        <ol class="steps">
+          <li><b>Client selection &amp; subject-level split.</b> <i>M</i> = 15 participants are clients, with all of a participant's records in one subset: 10 for federated training, 2 for validation, 3 for testing.</li>
+          <li><b>Feature-to-text.</b> Phase label and client ID are removed; missing values are filled by median / most-frequent value without using the label. Each record becomes a short key–value health summary.</li>
+          <li><b>Prompt design.</b> Chat-style system / user / assistant format. The target feedback refers only to features present in that record.</li>
+          <li><b>SFT data construction.</b> Tokenize and mask prompt tokens so the loss focuses on the assistant response.</li>
+          <li><b>Parameter-efficient adaptation.</b> LoRA on the main transformer projection layers, base SLM frozen. <i>T</i> = 50 rounds, AdamW with linear warm-up and gradient accumulation.</li>
+          <li><b>Local client training.</b> Each selected client fine-tunes the global adapter on its own data for <i>E</i> epochs.</li>
+          <li><b>Federated aggregation.</b> FedAvg weighted by each client's sample count.</li>
+          <li><b>Validation &amp; checkpointing.</b> Evaluate on the validation clients each round; save the adapter and tokenizer when validation loss improves.</li>
+          <li><b>Inference.</b> Attach the adapter to its base model, generate phase + feedback, and parse both from the output.</li>
+        </ol>
+      </div>
+
+      <div class="eq-card">
+        <p class="eq-label">Federated averaging of LoRA adapters</p>
+        <p class="eq">θ<sup>t+1</sup> = Σ<sub>i ∈ S<sub>t</sub></sub> &nbsp;<span class="frac"><span>n<sub>i</sub></span><span>Σ<sub>k ∈ S<sub>t</sub></sub> n<sub>k</sub></span></span>&nbsp; θ<sub>i</sub><sup>t+1</sup></p>
+        <p class="eq-note">S<sub>t</sub> = clients selected in round t, n<sub>i</sub> = local samples on client i, θ<sub>i</sub><sup>t+1</sup> = client i's updated adapter. Clients with more data contribute proportionally more.</p>
+      </div>
+
+      <figure class="fig fig-wide">
+        <img src="assets/img/fig3-pipeline.png" alt="Inference pipeline: hormonal, physiological and behavioral features are converted to a textual health summary, passed to the frozen SLM with the federated LoRA adapter, producing a predicted menstrual phase and personalized feedback." loading="lazy">
+        <figcaption><b>Figure 3.</b> Personalized menstrual phase prediction and feedback generation using a federated LoRA-adapted SLM.</figcaption>
+      </figure>
+
+      <!-- Prompt template (Figure 4, rendered as text) -->
+      <div class="prompt" id="prompt">
+        <div class="prompt-head">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="prompt-title">Chat-style training prompt template</span>
+        </div>
+        <div class="prompt-body">
+          <div class="turn turn-system">
+            <span class="role">system</span>
+            <p>Predict the menstrual cycle phase (Menstrual, Follicular, Fertility, or Luteal) and provide concise, personalized feedback based on the user's health features.</p>
+          </div>
+          <div class="turn turn-user">
+            <span class="role">user</span>
+            <p>Menstrual health summary:<br>
+            LH: <var>[value]</var>, Estrogen: <var>[value]</var>, PdG: <var>[value]</var>, Flow: <var>[value]</var>, Cramps: <var>[value]</var>, Fatigue: <var>[value]</var>, Bloating: <var>[value]</var>, Sleep issues: <var>[value]</var>, Mood swings: <var>[value]</var>, Stress: <var>[value]</var>, Exercise level: <var>[value]</var>, and other recorded symptoms.</p>
+          </div>
+          <div class="turn turn-assistant">
+            <span class="role">assistant · training target</span>
+            <p>Phase: <var>[Ground-truth menstrual phase]</var><br>
+            Feedback: <var>[Personalized, feature-grounded health explanation]</var></p>
+          </div>
+        </div>
+        <p class="prompt-foot"><b>Figure 4.</b> Prompt tokens are masked during supervised fine-tuning, so the model learns to generate the phase and the feedback — not to copy the prompt.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DATASET ============ -->
+  <section class="section" id="dataset">
+    <div class="wrap">
+      <h2 class="h-section"><span class="num">05</span>Dataset &amp; statistical analysis</h2>
+      <div class="split split-top">
+        <div>
+          <p><a href="https://doi.org/10.13026/zx6a-2c81" target="_blank" rel="noopener"><strong>mcPHASES</strong></a> — menstrual cycle Physiological, Hormonal, and Self-Reported Events and Symptoms — is a multimodal dataset of de-identified records from Canadian young adult menstruators collected over two three-month intervals.</p>
+          <dl class="facts">
+            <div><dt>Participants</dt><dd>42</dd></div>
+            <div><dt>Records</dt><dd>5,659</dd></div>
+            <div><dt>Features</dt><dd>17</dd></div>
+            <div><dt>Phase labels</dt><dd>4</dd></div>
+          </dl>
+          <p class="small">3 numerical hormone measurements (LH, estrogen, PdG) and 14 categorical features on menstrual flow, physical symptoms and lifestyle. Every record has at least one missing value, most often in PdG, flow volume and flow color. For the statistical tests only, hormones are imputed with phase-wise medians and missing categoricals set to <code>not_reported</code>; this label-dependent imputation is <em>not</em> used for model training.</p>
+          <div class="phase-legend" aria-label="The four menstrual phases">
+            <span class="chip ph-menstrual">Menstrual</span>
+            <span class="chip ph-follicular">Follicular</span>
+            <span class="chip ph-fertility">Fertility</span>
+            <span class="chip ph-luteal">Luteal</span>
+          </div>
+          <p class="small muted">Dataset access requires PhysioNet registration and agreement to its data-use terms; the data are not redistributed here.</p>
+        </div>
+
+        <div class="viz-root card">
+          <div class="viz-head">
+            <div>
+              <h3 class="viz-title">Which features track menstrual phase?</h3>
+              <p class="viz-sub">Kruskal–Wallis (numerical) and χ² (categorical) tests, grouped by type · bar length = −log<sub>10</sub>(p), log scale</p>
+            </div>
+            <div class="seg" role="tablist" aria-label="Chart or table view">
+              <button type="button" role="tab" aria-selected="true" data-view="chart">Chart</button>
+              <button type="button" role="tab" aria-selected="false" data-view="table">Table</button>
+            </div>
+          </div>
+          <div class="viz-legend">
+            <span><i class="sw sw-sig"></i>Significant (p &lt; 0.05)</span>
+            <span><i class="sw sw-ns"></i>Not significant</span>
+            <span><i class="sw sw-th"></i>p = 0.05</span>
+          </div>
+          <div id="sig-chart" class="sig-chart" data-view-panel="chart"></div>
+          <div class="table-scroll" data-view-panel="table" hidden>
+            <table class="data-table" id="sig-table">
+              <thead><tr><th>Feature</th><th>Type</th><th>p-value</th><th>Significant</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <p class="viz-foot">14 of 17 features are significantly associated with phase at α = 0.05 (no correction for multiple comparisons); appetite, exercise level and stress are not. Bars reaching the edge are below floating-point precision (p &lt; 10<sup>−300</sup>, reported as 0 by the test).</p>
+          <div class="tooltip" role="tooltip" hidden></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESULTS ============ -->
+  <section class="section alt" id="results">
+    <div class="wrap">
+      <h2 class="h-section"><span class="num">06</span>Results</h2>
+      <p class="section-intro">Subject-level split with 10 training, 2 validation and 3 test clients. All experiments ran on a workstation with 90&nbsp;GB of RAM. Macro F1 weights the four phases equally; weighted F1 weights them by frequency.</p>
+
+      <div class="model-compare">
+        <article class="model-card">
+          <header><h3>Qwen2.5-3B-Instruct</h3><span class="tag">best accuracy</span></header>
+          <dl class="metrics">
+            <div><dt>Accuracy</dt><dd>0.8394</dd></div>
+            <div><dt>Macro F1</dt><dd>0.8179</dd></div>
+            <div><dt>Weighted F1</dt><dd>0.8349</dd></div>
+          </dl>
+          <p class="model-note">Prediction ≈ 1–1.3 s · feedback ≈ 4.8–5.4 s per record. Macro F1 sits ~0.017 below weighted F1, suggesting weaker performance on less frequent phases.</p>
+        </article>
+        <article class="model-card">
+          <header><h3>Phi-3-mini-Instruct</h3><span class="tag tag-soft">lowest process RAM</span></header>
+          <dl class="metrics">
+            <div><dt>Accuracy</dt><dd>0.8251</dd></div>
+            <div><dt>Macro F1</dt><dd>0.8032</dd></div>
+            <div><dt>Weighted F1</dt><dd>0.8210</dd></div>
+          </dl>
+          <p class="model-note">Prediction ≈ 1.5–2 s · feedback ≈ 5.5–8.5 s per record. Output length is nearly constant at ~41 tokens.</p>
+        </article>
+      </div>
+
+      <div class="card table-card">
+        <h3 class="h-sub">Inference resource usage <span class="muted">(workstation, mean ± std)</span></h3>
+        <div class="table-scroll">
+          <table class="data-table num-table">
+            <thead><tr><th>Metric</th><th>Qwen2.5-3B</th><th>Phi-3-mini</th></tr></thead>
+            <tbody>
+              <tr><td>CPU usage (%)</td><td>97.9 ± 1.3</td><td>95.1 ± 1.8</td></tr>
+              <tr><td>Process RAM (GB)</td><td>1.56 ± 0.05</td><td><b>1.46</b> ± 0.00</td></tr>
+              <tr><td>RAM increase (MB)</td><td>5.3 ± 64.3</td><td>6.7 ± 66.6</td></tr>
+              <tr><td>System RAM (%)</td><td><b>65.8</b> ± 0.5</td><td>71.5 ± 6.6</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small muted">Table 2 of the paper. The average RAM increase during inference is small, though its large standard deviation shows run-to-run fluctuation. Smartphone or wearable deployment would need further compression such as quantization.</p>
+      </div>
+
+      <h3 class="h-sub">Per-user behaviour</h3>
+      <p class="section-intro small">Top row of each figure: Qwen2.5-3B (test users 1–11). Bottom row: Phi-3-mini (test users 12–50). The two models were evaluated on different users, so their per-user results shouldn't be compared directly.</p>
+      <div class="fig-grid">
+        <figure class="fig">
+          <img src="assets/img/fig5-accuracy.png" alt="Per-user prediction accuracy. Qwen ranges from 0.80 down to 0.10 across users 1–11; Phi-3 from 0.70 down to 0.10 across users 12–50." loading="lazy">
+          <figcaption><b>Figure 5.</b> Per-user accuracy ranges from about 0.10 to 0.80 — large user-specific differences.</figcaption>
+        </figure>
+        <figure class="fig">
+          <img src="assets/img/fig6-latency.png" alt="Per-user phase prediction time and feedback generation time in seconds. Qwen: prediction about 1.2 s, feedback about 5 s. Phi-3: prediction about 2 s, feedback 5.5 to 8.5 s." loading="lazy">
+          <figcaption><b>Figure 6.</b> Phase prediction stays low and stable; feedback generation costs several seconds more.</figcaption>
+        </figure>
+        <figure class="fig">
+          <img src="assets/img/fig7-input-tokens.png" alt="Per-user number of input tokens: Qwen about 400 to 440; Phi-3 about 450 to 475." loading="lazy">
+          <figcaption><b>Figure 7.</b> Input length: ~400–440 tokens (Qwen), ~450–475 tokens (Phi-3).</figcaption>
+        </figure>
+        <figure class="fig">
+          <img src="assets/img/fig8-output-tokens.png" alt="Per-user number of generated tokens: Qwen about 31 to 34; Phi-3 nearly constant at 41." loading="lazy">
+          <figcaption><b>Figure 8.</b> Output length: ~31–34 tokens (Qwen), ~41 tokens (Phi-3).</figcaption>
+        </figure>
+      </div>
+
+      <div class="callout">
+        <p><b>Takeaway.</b> Both federated SLMs reach accuracy above 0.82 and macro F1 above 0.80, with Qwen2.5-3B slightly ahead. Large differences between users point to a need for personalization strategies. Workstation latency (about 1–2 s for the phase, 5–8.5 s for feedback) suits non-interactive use such as daily summaries; real-time use on smartphones would need further optimization.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXAMPLES ============ -->
+  <section class="section" id="examples">
+    <div class="wrap">
+      <h2 class="h-section"><span class="num">07</span>What the feedback looks like</h2>
+      <p class="section-intro">Representative correctly classified test records and the feedback generated in the federated setting (Table 3). Most feedback is consistent with the predicted phase, but some responses are imprecise (flagged below) and they follow a small number of recurring templates — which motivates the systematic feedback evaluation planned as future work.</p>
+
+      <div class="filters" role="group" aria-label="Filter examples">
+        <div class="seg" id="model-filter">
+          <button type="button" aria-pressed="true" data-model="all">All models</button>
+          <button type="button" aria-pressed="false" data-model="Qwen">Qwen</button>
+          <button type="button" aria-pressed="false" data-model="Phi-3">Phi-3</button>
+        </div>
+        <div class="seg" id="phase-filter">
+          <button type="button" aria-pressed="true" data-phase="all">All phases</button>
+          <button type="button" aria-pressed="false" data-phase="Menstrual">Menstrual</button>
+          <button type="button" aria-pressed="false" data-phase="Follicular">Follicular</button>
+          <button type="button" aria-pressed="false" data-phase="Luteal">Luteal</button>
+        </div>
+        <span class="count" id="example-count" aria-live="polite"></span>
+      </div>
+
+      <div class="examples" id="examples-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ DEPLOYMENT ============ -->
+  <section class="section alt" id="deployment">
+    <div class="wrap">
+      <h2 class="h-section"><span class="num">08</span>Pathway to smartphone deployment</h2>
+      <p class="section-intro">This study runs on workstation hardware; smartphone deployment is outside its scope. Prior work does show that both model families can run inference on phones.</p>
+      <div class="deploy-grid">
+        <article class="deploy-card">
+          <p class="deploy-model">Qwen2.5-3B · quantized</p>
+          <p class="deploy-stat">≈ 2.4<small>GiB</small></p>
+          <p>Total memory on a OnePlus 12 Android phone with a 4,096-token context budget (Hao et al.).</p>
+        </article>
+        <article class="deploy-card">
+          <p class="deploy-model">Phi-3-mini · 4-bit</p>
+          <p class="deploy-stat">&gt; 12<small>tok/s</small></p>
+          <p>Fully offline on an iPhone with an A16 Bionic chip, using about 1.8 GB of memory (Phi-3 technical report).</p>
+        </article>
+        <article class="deploy-card">
+          <p class="deploy-model">Phi-3-mini-Instruct · 4-bit</p>
+          <p class="deploy-stat">iPhone 12 Pro<small>+ others</small></p>
+          <p>Evaluated on multiple iPhones with an MLX-based inference app (Nissen et al.).</p>
+        </article>
+      </div>
+      <ol class="pathway" aria-label="Proposed deployment pathway">
+        <li><b>Federated training</b><span>LoRA adapter learned across clients</span></li>
+        <li><b>Merge &amp; quantize</b><span>adapter folded into a quantized base model</span></li>
+        <li><b>On-device inference</b><span>local phase prediction + feedback</span></li>
+      </ol>
+      <p class="caveat"><b>Still to validate:</b> accuracy, latency, memory and thermal behaviour of the adapted models after quantization on real phones. The cited demonstrations establish on-device <em>inference</em>, not on-device federated <em>fine-tuning</em>.</p>
+    </div>
+  </section>
+
+  <!-- ============ LIMITATIONS ============ -->
+  <section class="section">
+    <div class="wrap">
+      <h2 class="h-section"><span class="num">09</span>Limitations &amp; future work</h2>
+      <div class="two-col">
+        <div>
+          <h3 class="h-sub">Limitations</h3>
+          <ul class="plain">
+            <li>A small number of federated clients, which may limit generalizability to diverse populations.</li>
+            <li>A single, recently released dataset limited to menstrual health, with substantial missing values; imputation may affect data fidelity.</li>
+            <li>Feature-to-text serialization can expose sensitive information if prompts, logs or model artifacts aren't protected.</li>
+            <li>No secure aggregation or differential privacy yet.</li>
+            <li>Feedback faithfulness, readability, safety and clinical usefulness are not assessed quantitatively.</li>
+            <li>Resource usage was measured on a workstation GPU, not on mobile or wearable hardware.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="h-sub">Next steps</h3>
+          <ul class="plain">
+            <li>Larger, more diverse women's-health datasets.</li>
+            <li>Secure aggregation and differential privacy.</li>
+            <li>Expert review and user studies of the generated feedback.</li>
+            <li>Tighter multimodal integration of wearable, physiological and self-reported data.</li>
+            <li>Personalized federated adaptation for inter-individual variation.</li>
+            <li>Model compression for a real-world mobile application.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="disclaimer">This is research software. Generated feedback is not medical advice and is not a substitute for a clinician.</p>
+    </div>
+  </section>
+
+  <!-- ============ CITATION ============ -->
+  <section class="section" id="citation">
+    <div class="wrap narrow">
+      <h2 class="h-section"><span class="num">10</span>Citation</h2>
+      <div class="bibtex">
+        <button type="button" class="copy-btn" data-copy="#bibtex-code">Copy</button>
+        <!-- TODO: update authors, venue and year after acceptance -->
+<pre><code id="bibtex-code">@article{fedslm_womenshealth_2026,
+  title   = {Federated small language models for personalized and
+             interpretable women's health support},
+  author  = {Anonymous},
+  journal = {Preprint, under review},
+  year    = {2026}
+}</code></pre>
+      </div>
+      <p class="small muted">Please also cite the mcPHASES dataset: Lin, B., Li, J. Y., Kalani, K., Truong, K., &amp; Mariakakis, A. (2025). <i>mcPHASES: A Dataset of Physiological, Hormonal, and Self-reported Events and Symptoms for Menstrual Health Tracking with Wearables</i> (v1.0.0). PhysioNet. <a href="https://doi.org/10.13026/zx6a-2c81" target="_blank" rel="noopener">doi:10.13026/zx6a-2c81</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>Source code will be made publicly available upon acceptance.</p>
+    <p class="muted">Page built for GitHub Pages · no tracking, no cookies.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
